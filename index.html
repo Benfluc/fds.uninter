@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="estilo.css"
+</head>
+<body>
+    <h1> Lúcio Júnio Benfica Rosa </h1>
+    <p>
+Nasci com um olhar inquieto para o mundo e desde cedo fui movido pela curiosidade 
+— não apenas sobre como as coisas funcionam, mas por que funcionam assim. 
+Essa inquietação me levou a trilhar uma trajetória multifacetada, unindo áreas 
+aparentemente distintas como administração, ciência de dados, inteligência artificial 
+e comportamento humano.
+Sou graduado em Administração, com especialização em Ciência de Dados e 
+Engenharia de Produção. Mas minha jornada acadêmica não parou por aí. 
+Fora do ambiente acadêmico, sou um entusiasta da cultura pop, 
+fã de quadrinhos, cinema e histórias que exploram a ficção. 
+Abaixo alguns dos meus hobbies:
+</p>
+
+<ul>
+    <li>Tocar Guitarra</li>
+    <li> Assistir Filmes e Séries</li>
+    <li> Jogar Video Game</li>
+</ul>
+
+<div class="img_principal">
+<img src="guitar.jpg">
+</div>
+
+<br>
+<br>
+<br>
+<table>
+    <caption><strong>PAÍSES QUE DESEJO CONHECER</strong></caption>
+    <thead>
+        <tr>
+            <th> País</th>
+            <th> Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> Cróacia</td>
+            <td><img src="croacia.jpg" width="200" height="160"></td>
+        </tr>
+        <tr>
+            <td> Japão</td>
+            <td><img src="japan.jpg" width="200" height="160"></td>
+        </tr>
+        <tr>
+            <td> Uruguai</td>
+            <td><img src="uruguai.jfif" width="200" height="160"></td>
+        </tr>            
+</table>
+
+<p>Clique aqui para ouvir músicas que eu gosto:</p>
+<a href="https://www.radiorocknews.com.br/" class="link"> Rádio ROCK NEWS</a>
+
+
+<p>Clique aqui para ver uma mensagem especial:</p>
+<button type = "button" onclick="mensagem()">Clique aqui para ler</button>
+<h3 id="mensagem" style="display: none;"></h3>
+
+
+</button>
+<script>
+  function mensagem() {
+    document.getElementById("mensagem").innerText = "Deviamos ser ensinados a não esperar por inspiração para começar algo. Ação sempre gera inspiração. Inspiração raramente gera ação. (Frank Tibolt)";
+    document.getElementById("mensagem").style.display = "block";
+  }
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(194, 248, 245);
+
+  div.img_principal{
+    text-align: center;
+    margin-top: 50px;
+}
+
+  div.img_principal img{
+     width: 200px;
+     border-radius: 5%;
+     width: 600px; 
+     height: auto;
+    }
+    }
+
+h1 {
+  color: rgb(34, 8, 148);
+  text-align: center;
+}
+
+
+p {
+  font-family: verdana;
+  font-size: 25px;
+  text-align: justify;
+}
+ul{
+    list-style: circle;
+    text-align: justify;
+    font-size: 20px;
+}
+li{margin-bottom: 15px;
+   font-size: 18px;
+}
+
+table {
+    font-style: normal;
+    border-collapse: collapse;
+    margin: 30px auto; 
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font color: navy blue;;
+  }
+  th, td {
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  th {
+    background-color: #3844b3;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  caption {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .link{
+    color:red;
+    text-decoration: none;
+  }
+
+  .link:hover{
+    color: yellow;
+  }
+
+  .botao{
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #3844b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.botao:hover {
+  background-color: #2a32a0;
+}
