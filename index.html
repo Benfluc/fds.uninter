@@ -28,14 +28,11 @@ Abaixo alguns dos meus hobbies:
 </ul>
 
 <div class="img_principal">
-<img src="guitar.jpg">
+<img src="guitar.jpg" alt="Tocar Guitarra">
 </div>
 
-<br>
-<br>
-<br>
+<h2>Países que gostaria de visitar</h2>
 <table>
-    <caption><strong>PAÍSES QUE DESEJO CONHECER</strong></caption>
     <thead>
         <tr>
             <th> País</th>
@@ -59,26 +56,12 @@ Abaixo alguns dos meus hobbies:
 
 <p>Clique aqui para ouvir músicas que eu gosto:</p>
 <a href="https://www.radiorocknews.com.br/" class="link"> Rádio ROCK NEWS</a>
+<br></br>
 
+<button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+<p id="mensagem"></p>
 
-<p>Clique aqui para ver uma mensagem especial:</p>
-<button type = "button" onclick="mensagem()">Clique aqui para ler</button>
-<h3 id="mensagem" style="display: none;"></h3>
-
-
-</button>
-<script>
-  function mensagem() {
-    document.getElementById("mensagem").innerText = "Deviamos ser ensinados a não esperar por inspiração para começar algo. Ação sempre gera inspiração. Inspiração raramente gera ação. (Frank Tibolt)";
-    document.getElementById("mensagem").style.display = "block";
-  }
-</script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<script src="script.js"></script>
 
 </body>
 </html>
