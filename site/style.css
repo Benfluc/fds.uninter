@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: 0.3s;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+section {
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark header {
+    background: #000;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+form {
+    max-width: 400px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+}
