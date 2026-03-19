@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <span class="menu-toggle" onclick="toggleMenu()">☰ Menu</span>
+
+    <nav id="menu">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <button onclick="toggleTema()">🌙 Tema</button>
+</header>
+
+<section id="sobre">
+    <h2>Sobre mim</h2>
+    <p>Seu texto aqui.</p>
+</section>
+
+<section id="formacao">
+    <h2>Formação</h2>
+    <p>Detalhes da sua formação.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Portfólio</h2>
+    <p>Seus projetos aqui.</p>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+
+    <form id="formContato">
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="email" id="email" placeholder="E-mail">
+        <textarea id="mensagem" placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+</section>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+
+function toggleTema() {
+    document.body.classList.toggle("dark");
+}
+
+document.getElementById("formContato").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nome = document.getElementById("nome").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mensagem = document.getElementById("mensagem").value.trim();
+
+    let emailValido = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+
+    if (!nome || !email || !mensagem) {
+        alert("Preencha todos os campos!");
+        return;
+    }
+
+    if (!emailValido.test(email)) {
+        alert("E-mail inválido!");
+        return;
+    }
+
+    alert("Mensagem enviada com sucesso!");
+
+    document.getElementById("formContato").reset();
+});
+</script>
+
+</body>
+</html>
